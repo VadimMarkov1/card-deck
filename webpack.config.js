@@ -29,6 +29,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         publicPath: 'https://vadimmarkov1.github.io/card-deck/',
+        chunkFilename: '[name].js',
     },
     plugins: [
         new CleanWebpackPlugin(),
