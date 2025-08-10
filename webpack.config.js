@@ -28,7 +28,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        publicPath: '/card-deck/',
+        publicPath: isProd ? '/card-deck/' : '/',
         chunkFilename: '[name].[contenthash].js',
     },
     plugins: [
