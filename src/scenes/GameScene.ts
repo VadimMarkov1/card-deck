@@ -48,15 +48,15 @@ export class GameScene extends PIXI.Container {
             }
 
         });
-        this.button.container.x = this.app.renderer.width / 2 -  this.app.renderer.width / 4;
-        this.button.container.y = this.app.renderer.height / 2;
+        this.button.container.x = this.app.renderer.width / 2 - 40;
+        this.button.container.y = this.app.renderer.height / 2 + this.app.renderer.height/5;
         this.addChild(this.button.container);
     }
 
     private createCounter () {
         this.counter = new CardCounter();
-        this.counter.x = this.app.renderer.width / 2 - this.app.renderer.width / 4 + 30;
-        this.counter.y = this.app.renderer.height / 2 + 80;
+        this.counter.x = this.app.renderer.width / 2 - 5;
+        this.counter.y = this.app.renderer.height / 2 + this.app.renderer.height/4 + 20;
         this.addChild(this.counter);
 
     }

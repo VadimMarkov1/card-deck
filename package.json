@@ -2,8 +2,8 @@
   "name": "card-deck",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve",
     "build": "webpack --mode production",
+    "start": "npm run build && webpack serve --mode development",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
