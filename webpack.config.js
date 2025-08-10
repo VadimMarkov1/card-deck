@@ -29,12 +29,12 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         publicPath: 'https://vadimmarkov1.github.io/card-deck/',
-        chunkFilename: '[name].[contenthash].js',
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
+            publicPath: 'https://vadimmarkov1.github.io/card-deck/',
             favicon: 'public/favicon.ico'
         }),
     ],
