@@ -28,14 +28,14 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        publicPath: './',
+        publicPath: 'card-deck',
         chunkFilename: '[name].js',
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
-            publicPath: './',
+            publicPath: 'card-deck',
             favicon: 'public/favicon.ico'
         }),
     ],
