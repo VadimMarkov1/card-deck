@@ -9,7 +9,7 @@ Simple PixiJS + TypeScript card deck project.
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/VadimMarkov1/testDigicode.git
+git clone https://github.com/VadimMarkov1/card-deck.git
 npm install
 ```
 ### Running Locally
