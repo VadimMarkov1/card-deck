@@ -5,12 +5,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: './src/index.ts',
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     devServer: {
-        static:  ['./dist', './public'],
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
         open: true,
-        hot: true,
-        port: 1234,
+        compress: true,
+        port: 1234
     },
     module: {
         rules: [
@@ -28,13 +30,11 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        publicPath: '/card-deck/',
-        chunkFilename: '[name].js',
+        publicPath: '/card-deck/'
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: 'src/index.html',
+            template: './src/index.html',
             favicon: 'public/favicon.ico'
         }),
     ],
