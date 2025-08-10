@@ -28,13 +28,13 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        publicPath: '/card-deck/',
+        publicPath: '/',
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
-            publicPath: '/card-deck/'
+            publicPath: '/'
         }),
     ],
 };
