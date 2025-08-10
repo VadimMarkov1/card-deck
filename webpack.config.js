@@ -28,7 +28,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        publicPath: '/card-deck/',
+        publicPath: 'https://vadimmarkov1.github.io/card-deck/',
         chunkFilename: '[name].[contenthash].js',
     },
     plugins: [
