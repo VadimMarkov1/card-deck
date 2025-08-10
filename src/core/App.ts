@@ -23,9 +23,9 @@ export class App {
                 {
                     name: 'game',
                     assets: {
-                        cards: '/assets/images/cards.json',
-                        click: '/assets/sounds/click.ogg',
-                        flip: '/assets/sounds/flip.ogg',
+                        cards: 'assets/images/cards.json',
+                        click: 'assets/sounds/click.ogg',
+                        flip: 'assets/sounds/flip.ogg',
                     }
                 }
             ]
